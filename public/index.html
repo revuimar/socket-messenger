@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="/menu.css">
+    <title>Socket Messanger</title>
+</head>
+<body>
+    <h1 style="margin: auto">Welcome to Socket Messenger</h1>
+    <br>
+    <div class="main-grid-container">
+
+        <div class="grid-container">
+                <label for="userName">User name:</label>
+                <input required id="userName" placeholder="Type user name..." class="">
+
+                <label for="chatRoom">Chat room:</label>
+                <input required id="chatRoom" placeholder="Existing or New chat name" class="">
+                <button id="join" class="">Join</button>
+                <div id="error-container" class="error-message"></div>
+        </div>
+
+        <div class="grid-container">
+            <a style="margin-left: -50%;">Chat rooms</a>
+            <div id="chatRooms" type="button" class="chat-list"></div>
+        </div>
+
+    </div>
+    <script  src="initial.js"></script>
+</body>
+</html>

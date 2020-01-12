@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title id="title">Title</title>
+</head>
+<body>
+    <div id="main" class="grid-container">
+        <div class="grid-item">
+            <a>Messages</a>
+            <div id="chat-window" class="message-space">
+                <div id="messages-window">
+
+                </div>
+                <div id="feedback"></div>
+            </div>
+            <br>
+            <form>
+            <div class="gui-grid-container">
+                <div class="gui-grid-item">
+
+                    <input required id="message" type="text" placeholder="Type here...">
+                </div>
+                <div class="gui-grid-item">
+                    <button id="send" type="button">Send</button>
+                </div>
+            </div>
+            </form>
+
+        </div>
+        <div class="grid-item">
+            <a>Memeber list</a>
+            <div id="member-list" class="message-space">
+
+            </div>
+            <button id="leave" type="button">Leave</button>
+        </div>
+    </div>
+    <script type="module" src="/messenger.js"></script>
+</body>
+</html>

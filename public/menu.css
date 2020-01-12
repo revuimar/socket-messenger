@@ -1,0 +1,71 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 10px;
+}
+.vertical-grid-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15% 65%;
+}
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    column-gap: 10px;
+}
+.field {
+    margin: 1px;
+    padding: 1px;
+}
+.chat-list{
+    margin-left: -50%;
+    display: inline-block;
+    background: #fcf9fc;
+    border: 1px solid #cbc8cb;
+    width: 40%;
+    height: 200px;
+    overflow-y: scroll;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.error-message {
+    margin: auto;
+    color: #cc0033;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+input:invalid {
+    background-color: #ffdddd;
+}
+input:valid {
+    background-color: #ddffdd;
+}
+label{
+    margin: auto;
+    display: block;
+}
+input{
+    margin: auto;
+    background: #fcf9fc;
+    border: 1px solid #cbc8cb;
+    border-radius: 5px 5px 5px 5px;
+    width: 30%;
+    height: 30px;
+    display: block;
+}
+
+button{
+    margin: auto;
+    background: #72af60;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 10%;
+    border-radius: 3px 3px 3px 3px;
+}
+
+button:hover{background-color: rgba(68, 198, 68, 0.86);}
+button:active{background-color: rgba(32, 78, 32, 0.86);}
